@@ -1,0 +1,6 @@
+GIVEN A user is on the savings accounts page
+WHEN The user selects an 'Account Name' from the list of holdings
+THEN They should be taken to the 'Account Details' page
+AND 'Account Name' should be populated with the saving account 'Account Num' for that product
+AND 'Account Details' should be populated with the saving account 'Product Details' for that product
+AND 'Account Balance' should be populated with the 'Current Balance'for the returned 'Accopunt Num' 

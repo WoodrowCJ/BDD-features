@@ -1,0 +1,3 @@
+GIVEN A user is on the savings accounts page
+WHEN The user clicks on the 'accounts button'
+THEN A list of the users savings accounts 'Account Name(s)' should be displayed below the 'Accounts' heading label
