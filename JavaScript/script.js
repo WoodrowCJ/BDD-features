@@ -1,82 +1,39 @@
+/*
 
-// CONDITIONALS
+1. Create a function that takes in 2 parameters num1 and num2 and subtracts the two numbers.
 
-// let a = 2;
+2. Create a function expression called welcome that take in name and age as a parameters. The outcome should be like so:
 
-// if ( a == 0 ) {
-//     console.log(`success!`);
-// }
-// else if ( a != 2 ) {
-//     console.log(`not 2`);
-// } else {
-//     console.log(`it must be 2`);
-// }
-// let b = 1;
-// // b ? console.log(`true`) : console.log(`false`);
+e.g. "My name is Cameron, i am 28 years old"
 
-// b === 1 ? console.log(`Yes`) : console.log(`No`);
+3. Create an arrow function called powerUp that takes in two values n1 and n2. The arrow function will return the power of the two numbers.
 
-// //Exercise 1
+e.g:
+* n1=2, n2=3 will return 8 (2 x 2 x 2);
+* n1=3, n2=3 will return 27 (3 x 3 x 3);
 
-// let age = 70;
+-> hint use Math.pow()
 
-// //Exercise 2
+*/
 
-// if (age >= 18 && age <= 65) {
-//     console.log(`within Age range at ` + age);
-// } else if(age < 18) {
-//     console.log(`sorry you are underage being ` + age);
-// } else {
-//     console.log(`Have you considered retirement? ` + age);
-// }
+// Exercise 1
 
-// age > 50 ? console.log(`Yes`) : console.log(`No`);
+let x = subNums(50, 30);
+function subNums(a,b) {
+    return a - b;
+}  
 
-// OBJECTS
+console.log(x);
 
-// let vehicle = {
-//     "type": "car",
-//     "seats": 5,
-//     "wheels": 4
-// };
-// console.log(vehicle);
+// Exercise 2
 
-// let house = [
-//     vehicle,
-//     {"type": "bike", "seats": 1, "wheels": 2}
-// ];
+welcome = (firstName, age) => (console.log(`My name is ${firstName}, I'm ${age} and flipping feel it today!`));
+welcome(`Carl`,`50`);
 
-// console.log(house);
+// Exercise 3
 
-// let x = [1,2,3,4,5];
-// let y = [12,-9,12,1,45];
-// for (let i = 0; i < x.length; i++) {
-// //    console.log(x[i]);
-// }
+powerUp = (n1,n2) => (console.log(`powered up = ` + Math.pow(n1,n2)));
+powerUp(5,3);
 
-// for (let i of y) {
-//     console.log(i);
-// }
+console.log(`Now where's that beer?`);
 
-// JSON NOTATION
-
-// let newJSON = {
-//     "name": "Carl",
-//     "age" : 50
-// }
-
-// let myName = JSON.parse(`{"name" : "Fred"}`);
-// console.log(myName.name);
-
-// let str = JSON.stringify(newJSON);
-// console.log(str);
-
-let myArray = ["hello","everyone"];
-console.log(myArray.length);
-myArray.push("hope","it's","going","great");
-console.log(myArray.length);
-myArray.shift(-1);
-for (let i = 0; i < myArray.length; i++) {
-    console.log(myArray[i]);
-}
- 
