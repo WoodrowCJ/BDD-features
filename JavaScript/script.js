@@ -18,7 +18,7 @@ e.g:
 
 // Exercise 1
 
-let x = subNums(50, 30);
+let x = subNums(50, 30); // declare the variable x as a function called subNums(with two arguments)
 function subNums(a,b) {
     return a - b;
 }  
